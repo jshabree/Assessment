@@ -1,0 +1,111 @@
+.discount {
+    font-size: 20px;
+    padding: 14px 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align : center;
+    background-color: #007367;
+    color: #fff;
+    font-family: grouch_btregular,Times New Roman,Times,Baskerville,Georgia,serif;
+}
+
+.logo {
+    max-width: 170px;
+    max-height: 170px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 20% 0 20%;
+}
+
+.heading {
+    font-size: 50px;
+    color: #007367;
+    letter-spacing: 1.6px;
+    font-family: grouch_btregular,Times New Roman,Times,Baskerville,Georgia,serif;
+}
+
+span {
+    color: #007367;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+.labelNames{
+    display: block;
+    color: #007367;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: .8px;
+    text-align: start;
+    
+}
+
+.InputValues{
+width: 100%;
+border: 1px solid #999;
+padding: .4em .7em;
+outline: none;
+display: block;
+line-height: 1.5;
+margin-bottom: 10px;
+}
+
+.sameline {
+    width: 45%;
+margin-right: 70px;
+}
+
+.formm{
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup {
+    margin: 0px 33% 120px;
+    padding-bottom: 60px;
+    
+}
+
+.inline{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.button{
+    background-color: #007367;
+    color: #fff;
+    width: 150px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 7px;
+    
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.slider1, .slider2 {
+    text-transform: uppercase;
+    margin: 0px 20px 0px 0px;
+
+}
+
+.buttonwrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons{
+    float:  right;
+}
