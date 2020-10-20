@@ -23,6 +23,7 @@ export default class Userform extends Component {
             <span className ={ this.state.value? "slider1": "slider2"}  onClick={()=> this.setState({value: false})}> Sign Up </span>
 
             </div>      
+            
             {this.state.value ?  <Signin   {...this.props}/> :  <Signup  {...this.props}/>}
             </div>
         )
