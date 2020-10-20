@@ -6,24 +6,24 @@ import Signin from './signin'
 export default class Userform extends Component {
 
     state={value: true};
+
+
     render() {
+
+        
         return (
             <div className = 'signup'>
 
-            <h2 className = 'heading'>  {this.state.value ? "Customer Login" :   "Create Account"}
-            </h2>
-
-
+            <h2 className = 'heading'>  {this.state.value ? "Customer Login" :   "Create Account"}</h2>
 
             <div className = "slider">
 
-            <span className = "slider1" onClick={()=> this.setState({value: true})}> Sign In </span>
+            <span className ={ this.state.value? "slider2": "slider1"}  onClick={()=> this.setState({value: true})}> Sign In </span>
 
-            <span className = "slider2" onClick={()=> this.setState({value: false})}> Sign Up </span>
+            <span className ={ this.state.value? "slider1": "slider2"}  onClick={()=> this.setState({value: false})}> Sign Up </span>
 
-
-            </div>
-            {this.state.value ? <Signin  history= {this.props.history}/> : <Signup  history= {this.props.history}/>}
+            </div>      
+            {this.state.value ?  <Signin   {...this.props}/> :  <Signup  {...this.props}/>}
             </div>
         )
     }

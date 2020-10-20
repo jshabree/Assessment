@@ -8,19 +8,26 @@ export default class signin extends Component {
 
      handleSubmit = async (e) => {
         e.preventDefault();
-        // const body = this.state;
-     this.props.history.push("/home")
+         const body = this.state;
+let data;
+    try {
+          await fetch("http://localhost:5000/validateuser", {
+          method: "POST",
+          body: JSON.stringify(body),
+          headers: { "Content-Type": "application/json" },
+        }).then( response => response.json())
+        .then(info => data= info.message)
+      } catch (error) {
+        console.log(error);
+      }
+if(data === "user exist") {
+    this.props.history.push("/home")
+}
+else {
+    console.log("dataa", (data))
+    alert((data))
 
-    // try {
-    //     const data = await fetch("http://localhost:5000/adduser/", {
-    //       method: "POST",
-    //       body: JSON.stringify(body),
-    //       headers: { "Content-Type": "application/json" },
-    //     });
-    //     console.log("data", data);
-    //   } catch (error) {
-    //     console.log(error);
-    //   }
+}
     };
     render() {
         return (
@@ -34,10 +41,6 @@ export default class signin extends Component {
                 <button type = 'submit' onClick={this.handleSubmit} className="button"> Log In </button>
                 </div>
             </form>
-            
-            
-                
-            
         )
     }
 }

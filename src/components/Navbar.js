@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import logo from "../logo.jpg"
 // import {VscAccount} from 'react-icons/vsc';
 // import {AiOutlineShoppingCart} from 'react-icons/ai';
-
-
 export default class Navbar extends Component {
     render() {
         return (
@@ -14,7 +12,6 @@ export default class Navbar extends Component {
             <VscAccount size={32}/>
             <AiOutlineShoppingCart size={32}/>
         </div>*/}
-          
             <span> Products </span>
             <span> Our Story </span>
             <span> Ingredients </span>
@@ -23,8 +20,6 @@ export default class Navbar extends Component {
             <span> Find Us </span>
             </div>
             </div>
-                
-        
         )
     }
 }

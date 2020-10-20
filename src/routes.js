@@ -12,7 +12,7 @@ import Home from './components/home';
             <Router>
             <Navbar />]
             <Switch>
-            <Route exact path="/"  render={(props) => <Userform  history= {this.props.history}/>} />
+            <Route exact path="/"  render={(props) => <Userform  {...props}/>} />
             <Route exact path="/home" render={(props) => <Home {...props}/>} />
             </Switch>
           </Router>

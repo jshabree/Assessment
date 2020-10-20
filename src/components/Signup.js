@@ -23,15 +23,9 @@ export default class Signup extends Component {
 
     };
 
-
-  
-
     render() {
         return ( 
-
-
             <form className="formm">
-
             <div className="inline">
             <div className="sameline">
                 <label className="labelNames">First Name</label>
