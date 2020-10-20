@@ -1,0 +1,24 @@
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; 
+import Userform from "./components/Userform"
+import Navbar from "./components/Navbar"
+import Home from './components/home';
+// import signin from './components/signin';
+// import Signup from './components/Signup';
+
+ class routes extends Component {
+    render() {
+        return (
+            <Router>
+            <Navbar />]
+            <Switch>
+            <Route exact path="/"  render={(props) => <Userform  history= {this.props.history}/>} />
+            <Route exact path="/home" render={(props) => <Home {...props}/>} />
+            </Switch>
+          </Router>
+        )
+    }
+}
+
+
+export default (routes);

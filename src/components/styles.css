@@ -67,9 +67,8 @@ margin-right: 70px;
 }
 
 .signup {
-    margin: 0px 33% 120px;
+    margin: 270px 33% 120px;
     padding-bottom: 60px;
-    
 }
 
 .inline{
@@ -108,4 +107,12 @@ margin-right: 70px;
 
 .icons{
     float:  right;
+}
+
+.NavbarComponent{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+
 }
