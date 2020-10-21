@@ -125,3 +125,17 @@ margin-right: 70px;
     background-color: #fff;
 
 }
+
+.a {  
+    text-align: left;
+    height: 500px;
+    color: #fff;
+    font-family: grouch_btregular,Times New Roman,Times,Baskerville,Georgia,serif;
+    background-image: url("https://m.media-amazon.com/images/S/abs-image-upload-na/9/AmazonStores/ATVPDKIKX0DER/6cc4e442f7bc3cbe90df7ecf697c4c42.w3378.h676._CR0%2C0%2C3378%2C676_SX1500_.jpg");
+    background-repeat: no-repeat;
+}
+
+.sidedebarHeading {
+    font-size: 74px;
+    font-weight: bold;
+} 
