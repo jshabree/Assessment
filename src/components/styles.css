@@ -126,16 +126,43 @@ margin-right: 70px;
 
 }
 
-.a {  
+.a { 
     text-align: left;
-    height: 500px;
+    height: 450px;
+    background-size: cover;
     color: #fff;
     font-family: grouch_btregular,Times New Roman,Times,Baskerville,Georgia,serif;
-    background-image: url("https://m.media-amazon.com/images/S/abs-image-upload-na/9/AmazonStores/ATVPDKIKX0DER/6cc4e442f7bc3cbe90df7ecf697c4c42.w3378.h676._CR0%2C0%2C3378%2C676_SX1500_.jpg");
+    background-image: url("https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Homepage_mobileedit_9_16_recolor_background_6b743177-a30e-4389-8c58-db0af8a9d1ba_2048x2048.jpg?v=1600304412");
     background-repeat: no-repeat;
+
 }
 
 .sidedebarHeading {
     font-size: 74px;
-    font-weight: bold;
+    width: 200px;
+    margin: 0px 0px 0px 200px;
 } 
+
+.midHeading {
+    margin-left: 200px;
+    font-weight: 500;
+    width: 350px;
+    letter-spacing: 1.6px;
+    font-size: 1.3125rem; 
+    font: 18px/1.2 Walsheim,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: bold;
+}
+
+.lowButton {
+    font-weight: 700;
+    padding: 15px;
+    border: 1px solid #007367;
+    letter-spacing: 1.8px;
+    min-width: 200px;
+    color: #fff;
+    background: #007367;
+    margin-left: 200px;
+    font-size: 17px;
+    font: 18px/1.2 Walsheim,Arial,Helvetica Neue,Helvetica,sans-serif;
+    text-transform: uppercase;
+}

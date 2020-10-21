@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
+import { Col, Container } from 'react-bootstrap'
 
 export default class home extends Component {
     render() {
         return (
             <div className = 'a' style={{textAlign: "left", marginTop: "250px" }}>
-            <h3 className = 'sidebarHeading'> Super Delicious Cookies </h3>
-            <p>that are also gluten free, vegan & allergy-friendly</p>
-            <button>SHOP NOW</button>
+            <h1 className = 'sidedebarHeading'> Super Delicious Cookies </h1>
+            <p className = 'midHeading'> that are also gluten free, vegan & allergy-friendly</p>
+            <button className = 'lowButton' >Shop Now</button>
             </div>
         )
     }
