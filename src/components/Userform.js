@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Signup from './Signup'
 import Signin from './signin'
-// import { Link } from 'react-router-dom';
 
 export default class Userform extends Component {
 
@@ -23,7 +22,7 @@ export default class Userform extends Component {
             <span className ={ this.state.value? "slider1": "slider2"}  onClick={()=> this.setState({value: false})}> Sign Up </span>
 
             </div>      
-            
+
             {this.state.value ?  <Signin   {...this.props}/> :  <Signup  {...this.props}/>}
             </div>
         )
