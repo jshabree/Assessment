@@ -48,18 +48,18 @@ span {
 }
 
 .InputValues{
-width: 100%;
-border: 1px solid #999;
-padding: .4em .7em;
-outline: none;
-display: block;
-line-height: 1.5;
-margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #999;
+    padding: .4em .7em;
+    outline: none;
+    display: block;
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
 
 .sameline {
     width: 45%;
-margin-right: 70px;
+    margin-right: 70px;
 }
 
 .formm{
@@ -114,7 +114,7 @@ margin-right: 70px;
     flex-direction: row;
 }
 
-.icons{
+.icons {
     float:  right;
 }
 
@@ -169,11 +169,28 @@ margin-right: 70px;
 }
 
 .img-responsive {
-
-}
-
-/* .thumbnail {
-    position: absolute;
     max-width: 100%;
     height: auto;
-} */
+}
+
+
+.first {
+    margin: 15px 0px 1px;
+    color: #007367;
+    letter-spacing: .9px;
+    font-family: grouch_btregular,Times New Roman,Times,Baskerville,Georgia,serif;;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: left;
+}
+
+.shop {
+    letter-spacing: 1.3px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #007367;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+}

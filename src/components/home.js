@@ -16,34 +16,74 @@ export default class home extends Component {
 
             <div class = "container-fluid">
             <div class="row">
+            
+            <div class="single-grid col-12 col-md-4">
+            <a href ="#" class = "navigate">
 
-            <div class="col-lg-4 col-md-4 col-xs-4 thumb">
+            <div class = "outer">
 
-            <a class="thumbnail" href="#">
-            <img class="img-responsive" src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/KEP_5941_copy_large.png?v=1601059583" alt=""></img>
+            <div class ="first">
+            
+            <h2> Crunchy Cookies </h2>
+            <div class = "shop"> Shop</div>
+
+
+            </div>
+
+            <img src ="/images/Birthday_cake.png" class = "img-responsive" alt = "Crunchy cookies"/>
+            </div>
+            
+            </a>
+
+            </div>
+
+
+            <div class="single-grid col-12 col-md-4">
+            <a href ="#" class = "navigate">
+
+            <div class = "outer">
+
+            <div class ="first">
+            
+            <h2> Soft baked cookies </h2>
+            <div class = "shop"> Shop</div>
+
+
+            </div>
+
+            <img src ="/images/Pumpkin_spice.png" class = "img-responsive" alt = "Soft baked cookies "/>
+            </div>
+            
             </a>
 
             </div>
             
-            <div class="col-lg-4 col-md-4 col-xs-4 thumb">
-            <a class="thumbnail" href="#">
-            <img class="img-responsive" src="https://target.scene7.com/is/image/Target/GUEST_e9af61fc-9865-49a7-9df4-ac2de91426c8?wid=488&hei=488&fmt=pjpeg" alt=""></img>
+            <div class="single-grid col-12 col-md-4">
+            <a href ="#" class = "navigate">
+
+            <div class = "outer">
+
+            <div class ="first">
+            
+            <h2> Variety packs </h2>
+            <div class = "shop"> Shop</div>
+
+
+            </div>
+
+            <img src ="/images/Variety_1.png" class = "img-responsive" alt = " Variety packs "/>
+
+            </div>
+            
             </a>
 
             </div>
 
-            <div class="col-lg-4 col-md-4 col-xs-4 thumb">
-            <a class="thumbnail" href="#">
-            <img class="img-responsive" src="https://assets.privy.com/picture_photos/1264514/medium/059ad357b46148a782a81d5a1fe04e38?1576775194" alt=""></img>
-            </a>
+            </div>
 
             </div>
             </div>
             
-
-            </div>
-            
-            </div>
         )
     }
 }
