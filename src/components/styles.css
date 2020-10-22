@@ -167,3 +167,13 @@ margin-right: 70px;
     font: 18px/1.2 Walsheim,Arial,Helvetica Neue,Helvetica,sans-serif;
     text-transform: uppercase;
 }
+
+.img-responsive {
+
+}
+
+/* .thumbnail {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+} */
