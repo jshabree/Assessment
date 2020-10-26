@@ -30,10 +30,26 @@ export default class home extends Component {
 
             </div>
 
-            <img src ="/images/Birthday_cake.png" class = "img-responsive" alt = "Crunchy cookies"/>
-            <img src={require('.../')}
+          {/*  <img src ="/images/Birthday_cake.png" class = "img-responsive" alt = "Crunchy cookies"/>*/}
+          {/*  <img src={require('.../')} 
             onMouseOver={this.src = require('/images/Birthday_cake.png')}
-            onMouseOut={this.src = require('/images/Choco_chip.png')} alt = ""/>
+            onMouseOut={this.src = require('/images/Choco_chip.png')} alt = ""/>*/}
+
+            <div style = {styles}>
+            <img 
+            src = {this.state.img}
+            onMouseEnter = {() => {
+                this.setState({
+                    img : "/images/Birthday_cake.png"
+                })
+            }}
+
+            onMouseOut = {() => {
+                this.setState({
+                    img :"/images/Choco_chip.png"
+                })
+            }}
+            </div>
             </div>
             
             </a>
