@@ -2,22 +2,8 @@ import React, { Component } from 'react'
 // import { Col, Row, Container } from 'react-bootstrap'
 
 export default class home extends Component {
-    changeImage = (img) => {
-        this.setState({
-            user: {
-                [img]: '/images/Birthday_cake.png'
-            }
-        });
-    }
-
-    resetImage = (img) => {
-        this.setState({
-            // setting back to old image
-        });
-    }
 
     render() {
-        const { user } = this.state;
 
         return (
             <div>
@@ -46,21 +32,7 @@ export default class home extends Component {
 
             </div>
 
-          {/*  <img src ="/images/Birthday_cake.png" class = "img-responsive" alt = "Crunchy cookies"/>*/}
-          {/*  <img src={require('.../')} 
-            onMouseOver={this.src = require('/images/Birthday_cake.png')}
-            onMouseOut={this.src = require('/images/Choco_chip.png')} alt = ""/>*/}
-            <div>
-
-            onMouseEnter = {() => this.changeImage('img1')}
-            onMouseLeave = {() => 
-                
-            <img className = "setting" src = {user.img1}/ alt = ""/>
-            }
-
-            </div>
-            
-
+            <img src ="/images/Birthday_cake.png" class = "img-responsive" alt = "Crunchy cookies"/>
             
             </div>
             
