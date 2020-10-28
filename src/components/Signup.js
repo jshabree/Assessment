@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 export default class Signup extends Component { 
     state = {firstName: "", lastName: "", email: "", password: ""}
+ 
     handleChange = (e)=> {
         this.setState({[e.target.name] : e.target.value})
     }
@@ -9,9 +10,11 @@ export default class Signup extends Component {
         e.preventDefault();
         const body = this.state;
      
+        let link1 = "https://partake-food-server.herokuapp.com/adduser"
+        let link2 = "http://localhost:5000/adduser"
 
     try {
-        const data = await fetch("http://localhost:5000/adduser/", {
+        const data = await fetch(link1, {
           method: "POST",
           body: JSON.stringify(body),
           headers: { "Content-Type": "application/json" },

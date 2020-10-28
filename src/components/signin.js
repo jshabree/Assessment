@@ -10,8 +10,12 @@ export default class signin extends Component {
         e.preventDefault();
          const body = this.state;
 let data;
+
+let link1 = "https://partake-food-server.herokuapp.com/validateuser"
+let link2 = "http://localhost:5000/validateuser"
+
     try {
-          await fetch("http://localhost:5000/validateuser", {
+          await fetch(link1, {
           method: "POST",
           body: JSON.stringify(body),
           headers: { "Content-Type": "application/json" },
