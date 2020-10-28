@@ -123,6 +123,7 @@ span {
     width: 100%;
     top: 0;
     background-color: #fff;
+    z-index: 9999;
 
 }
 
@@ -168,7 +169,7 @@ span {
     text-transform: uppercase;
 }
 
-.img-responsive {
+.img-responsive  {
     max-width: 100%;
     height: auto;
 }
@@ -182,6 +183,7 @@ span {
     font-weight: bold;
     font-size: 35px;
     text-align: left;
+
 }
 
 .shop {
@@ -194,3 +196,7 @@ span {
     line-height: 16px;
     text-align: left;
 }
+
+/* .outer{
+background-color: palevioletred;
+} */
