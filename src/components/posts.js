@@ -17,10 +17,15 @@ export default class posts extends Component {
 
 
 
+    getPosts=()=>{
+        fetch("https://jsonplaceholder.typicode.com/posts?_limit=5", {
+            method: "GET",
+            headers: { "Content-Type": "application/json" },
+          }).then( response => response.json())
+          .then(info => this.setState({data: info}))
+    }
 
-        
     
-
     render() {
         console.log("data:", this.state.data)
         return (
