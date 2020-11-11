@@ -25,13 +25,13 @@ export default class posts extends Component {
           .then(info => this.setState({data: info}))
     }
 
-    
+
     render() {
         console.log("data:", this.state.data)
         return (
             <div style={{marginTop: "150px"}}>
 
-            {  <button onClick={this.getPosts}>Get All Posts</button>
+            {  <button onClick={this.getPosts}> Display first 5 sets of data </button>
         }
 
             { this.state.data.length> 0 ?
