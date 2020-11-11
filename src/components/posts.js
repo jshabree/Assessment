@@ -34,14 +34,13 @@ export default class posts extends Component {
             {  <button onClick={this.getPosts}> Display first 5 sets of data </button>
         }
 
-            { this.state.data.length> 0 ?
+            { 
+                this.state.data.length> 0 ?
                 this.state.data.map(item => 
                     <div> 
                         <h2> {item.title} </h2> 
                         <p> {item.body} </p>
-                    </div>
-                )
-                : "No data fetched" 
+                    </div>): "No data fetched" 
             }
                 
             </div>
