@@ -35,7 +35,14 @@ export default class posts extends Component {
         }
 
             { this.state.data.length> 0 ?
-                this.state.data.map(item => <div> <h2>Title: {item.title}</h2> <p>Body: {item.body}</p></div>): "No data fetched"}
+                this.state.data.map(item => 
+                    <div> 
+                        <h2> {item.title} </h2> 
+                        <p> {item.body} </p>
+                    </div>
+                )
+                : "No data fetched" 
+            }
                 
             </div>
         )
