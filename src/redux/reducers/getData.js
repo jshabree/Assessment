@@ -1,14 +1,24 @@
 import * as Types from "../actions/types";
 
 const initialObject = {
+    result: {},
     data: {
         title : "",
         body : "",
     }
 };
 
-// 
+// Retrieving data from the store
 const handleGetDataSuccess = (state, action) => {
+    console.log("Success! Data is being displayed," + JSON.stringify(action));
+    let newState = { ...state };
+    if(action.result !== undefined) {
+        newState = Object.assign({}, state, {
+            data: Object.assign([], action.result)
+        });
+    }
+        console.log("State -> " + JSON.stringify(newState));
+        return { ...newState };
 
 }
 
