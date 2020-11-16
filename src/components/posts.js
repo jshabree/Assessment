@@ -27,10 +27,6 @@ class posts extends Component {
         }
       }
 
- 
-
-
-
     getPosts=()=>{
 
         this.props.dispatch(getData());
@@ -55,15 +51,21 @@ class posts extends Component {
                 this.state.data.length> 0 ?
                 this.state.data.map(item => 
                     <div> 
+                        <hr/>
                         <h2> {item.title} </h2> 
                         <p> {item.body} </p>
-                    </div>): "No data fetched" 
+                    </div>
+                    ):
+                    <div>
+                        <hr/>
+                            No data fetched yet
+                    </div>    
             }
                 
-            </div>
-        )
-    }
-}
+             </div>
+        );
+    };
+};
 
 const mapStateToProps = state => {
     return {
