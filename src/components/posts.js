@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import getData from "../redux/actions/index";
+import { getData } from "../redux/actions/index";
 
 class posts extends Component {
 
