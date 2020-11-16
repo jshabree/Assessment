@@ -1,29 +1,35 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { connect } from "react-redux";
+import getData from "../redux/actions/index";
 
-export default class posts extends Component {
+class posts extends Component {
 
 
     state = {
         data: [],
     }
 
-     componentDidMount=()=>{
-        fetch("https://jsonplaceholder.typicode.com/posts", {
-            method: "GET",
-            headers: { "Content-Type": "application/json" },
-          }).then( response => response.json())
-          .then(info => this.setState({data: info}))
-    }
+    //  componentDidMount=()=>{
+    //     fetch("https://jsonplaceholder.typicode.com/posts", {
+    //         method: "GET",
+    //         headers: { "Content-Type": "application/json" },
+    //       }).then( response => response.json())
+    //       .then(info => this.setState({data: info}))
+    // }
+
+    componentDidMount = () => {
+        this.props.dispatch(getData());
+    };
 
 
 
-    getPosts=()=>{
-        fetch("https://jsonplaceholder.typicode.com/posts?_limit=5", {
-            method: "GET",
-            headers: { "Content-Type": "application/json" },
-          }).then( response => response.json())
-          .then(info => this.setState({data: info}))
-    }
+    // getPosts=()=>{
+    //     fetch("https://jsonplaceholder.typicode.com/posts?_limit=5", {
+    //         method: "GET",
+    //         headers: { "Content-Type": "application/json" },
+    //       }).then( response => response.json())
+    //       .then(info => this.setState({data: info}))
+    // }
 
 
     render() {
@@ -31,8 +37,7 @@ export default class posts extends Component {
         return (
             <div style={{marginTop: "150px"}}>
 
-            {  <button onClick={this.getPosts}> Display first 5 sets of data </button>
-        }
+            <button onClick={this.getPosts}> Display first 5 sets of data </button> 
 
             { 
                 this.state.data.length> 0 ?
@@ -47,3 +52,11 @@ export default class posts extends Component {
         )
     }
 }
+
+const mapStateToProps = state => {
+    return {
+        result: state.data
+    };
+};
+
+export default connect(mapStateToProps)(posts);
