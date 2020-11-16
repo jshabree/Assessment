@@ -4,7 +4,7 @@ import {
     takeLatest
   } from "redux-saga/effects";
 
-import * as Types from "..actions/types";
+import * as Types from "../actions/types";
 
 import {
     getDataFromServer,

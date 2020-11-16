@@ -1,0 +1,202 @@
+.discount {
+    font-size: 20px;
+    padding: 14px 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align : center;
+    background-color: #007367;
+    color: #fff;
+    font-family: grouch_btregular,Times New Roman,Times,Baskerville,Georgia,serif;
+}
+
+.logo {
+    max-width: 170px;
+    max-height: 170px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 20% 0 20%;
+}
+
+.heading {
+    font-size: 50px;
+    color: #007367;
+    letter-spacing: 1.6px;
+    font-family: grouch_btregular,Times New Roman,Times,Baskerville,Georgia,serif;
+}
+
+span {
+    color: #007367;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.labelNames{
+    display: block;
+    color: #007367;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: .8px;
+    text-align: start;
+    font-weight: bold;
+    
+}
+
+.InputValues{
+    width: 100%;
+    border: 1px solid #999;
+    padding: .4em .7em;
+    outline: none;
+    display: block;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.sameline {
+    width: 45%;
+    margin-right: 70px;
+}
+
+.formm{
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup {
+    margin: 270px 33% 120px;
+    padding-bottom: 60px;
+}
+
+.inline{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.button{
+    background-color: #007367;
+    color: #fff;
+    width: 150px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 7px;
+    
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.slider1 {
+    text-transform: uppercase;
+    margin: 0px 20px 0px 0px;
+}
+
+.slider2{
+    text-transform: uppercase;
+    margin: 0px 20px 0px 0px;
+    text-decoration: underline; 
+}
+
+
+
+.buttonwrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons {
+    float:  right;
+}
+
+.NavbarComponent{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    z-index: 9999;
+
+}
+
+.a { 
+    text-align: left;
+    height: 450px;
+    background-size: cover;
+    color: #fff;
+    font-family: grouch_btregular,Times New Roman,Times,Baskerville,Georgia,serif;
+    background-image: url("https://cdn.shopify.com/s/files/1/0012/2296/7353/files/Homepage_mobileedit_9_16_recolor_background_6b743177-a30e-4389-8c58-db0af8a9d1ba_2048x2048.jpg?v=1600304412");
+    background-repeat: no-repeat;
+    background-position: 50% center;
+}
+
+.sidedebarHeading {
+    font-size: 74px;
+    width: 200px;
+    margin: 0px 0px 0px 200px;
+    font-weight: 900;
+} 
+
+.midHeading {
+    margin-left: 200px;
+    font-weight: 500;
+    width: 350px;
+    letter-spacing: 1.6px;
+    font-size: 1.3125rem; 
+    font: 18px/1.2 Walsheim,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: bold;
+}
+
+.lowButton {
+    font-weight: 700;
+    padding: 15px;
+    border: 1px solid #007367;
+    letter-spacing: 1.8px;
+    min-width: 200px;
+    color: #fff;
+    background: #007367;
+    margin-left: 200px;
+    font-size: 17px;
+    font: 18px/1.2 Walsheim,Arial,Helvetica Neue,Helvetica,sans-serif;
+    text-transform: uppercase;
+}
+
+.img-responsive  {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.first {
+    margin: 15px 0px 1px;
+    color: #007367;
+    letter-spacing: .9px;
+    font-family: grouch_btregular,Times New Roman,Times,Baskerville,Georgia,serif;;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: left;
+
+}
+
+.shop {
+    letter-spacing: 1.3px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #007367;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+}
+
+/* .outer{
+background-color: palevioletred;
+} */

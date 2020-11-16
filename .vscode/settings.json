@@ -8,5 +8,6 @@
         "signup",
         "walsheim",
         "workingdetails"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }
