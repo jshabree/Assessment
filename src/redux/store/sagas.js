@@ -8,7 +8,7 @@ import * as Types from "..actions/types";
 
 import {
     getDataFromServer,
-    getDataFromServerToPost
+    // getDataFromServerToPost
 } from "../service";
 
 function* fetchData(action) {
