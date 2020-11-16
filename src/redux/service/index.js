@@ -2,20 +2,20 @@ export function getDataFromServer(apiPath, requestMethod, formBody) {
     let myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    if(!requestMethod && requestMethod !== "GET") {
+    if( requestMethod !== "GET" && requestMethod !== "") {
         return fetch(apiPath, { method: "POST", headers: myHeaders });
     }
     else {
-        if(formBody) {
-            let fetchData = {
-                method: "GET",
-                body: JSON.stringify(formBody),
-                headers: myHeaders
-            };
+        // if(formBody) {
+            // let fetchData = {
+            //     method: "GET",
+            //     body: formBody,
+            //     headers: myHeaders
+            // };
 
-        return fetch(apiPath, fetchData);
+            return fetch(apiPath, { method: "GET", headers: myHeaders });
 
-        }
+        // }
     }
 }
 

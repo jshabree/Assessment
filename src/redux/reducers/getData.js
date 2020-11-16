@@ -2,10 +2,7 @@ import * as Types from "../actions/types";
 
 const initialObject = {
     result: {},
-    data: {
-        title : "",
-        body : "",
-    }
+    data: []
 };
 
 // Retrieving data from the store

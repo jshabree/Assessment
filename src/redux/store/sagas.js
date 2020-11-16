@@ -13,7 +13,7 @@ import {
 
 function* fetchData(action) {
     try {
-        const baseUrl = "https://jsonplaceholder.typicode.com/posts";
+        const baseUrl = "https://jsonplaceholder.typicode.com/posts?_limit=5";
 
         console.log("Action in fetchData at sagas ->", + JSON.stringify(action));
         const requestMethod = "";

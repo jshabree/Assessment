@@ -18,18 +18,29 @@ class posts extends Component {
     // }
 
     componentDidMount = () => {
-        this.props.dispatch(getData());
+        // this.props.dispatch(getData());
     };
 
+    componentDidUpdate(newProps, prevState) {
+        if (newProps.result !== prevState.data) {
+          this.setState({data: newProps.result})
+        }
+      }
+
+ 
 
 
-    // getPosts=()=>{
-    //     fetch("https://jsonplaceholder.typicode.com/posts?_limit=5", {
-    //         method: "GET",
-    //         headers: { "Content-Type": "application/json" },
-    //       }).then( response => response.json())
-    //       .then(info => this.setState({data: info}))
-    // }
+
+    getPosts=()=>{
+
+        this.props.dispatch(getData());
+
+        // fetch("https://jsonplaceholder.typicode.com/posts?_limit=5", {
+        //     method: "GET",
+        //     headers: { "Content-Type": "application/json" },
+        //   }).then( response => response.json())
+        //   .then(info => this.setState({data: info}))
+    }
 
 
     render() {
@@ -37,8 +48,8 @@ class posts extends Component {
         return (
             <div style={{marginTop: "150px"}}>
 
-            { //<button onClick={this.getPosts}> Display first 5 sets of data </button> }
-        }
+             <button onClick={this.getPosts}> Display first 5 sets of data </button> 
+        
 
             { 
                 this.state.data.length> 0 ?
@@ -56,7 +67,7 @@ class posts extends Component {
 
 const mapStateToProps = state => {
     return {
-        result: state.data
+        result: state.getData.data
     };
 };
 
