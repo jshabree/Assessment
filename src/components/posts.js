@@ -37,7 +37,8 @@ class posts extends Component {
         return (
             <div style={{marginTop: "150px"}}>
 
-            <button onClick={this.getPosts}> Display first 5 sets of data </button> 
+            { //<button onClick={this.getPosts}> Display first 5 sets of data </button> }
+        }
 
             { 
                 this.state.data.length> 0 ?
