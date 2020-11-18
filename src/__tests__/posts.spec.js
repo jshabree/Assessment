@@ -18,10 +18,10 @@ describe('<Posts />', () => {
     });
 
     it('component fetching posts from API', async(done) => {
-        const root = shallow(<Posts />);
+        const root = shallow(<Posts data= "data"/>);
 
         let componentsPost = {};
-        await waitUntil(() => root.state('Posts').data !== null);
+        await waitUntil(() => root.state('info').data !== null);
 
         expect(componentsPost.data).toEqual('cat API');
 
