@@ -6,31 +6,34 @@ export default class signin extends Component {
         this.setState({[e.target.name] : e.target.value})
     }
 
-     handleSubmit = async (e) => {
+    handleSubmit = async (e) => {
         e.preventDefault();
-         const body = this.state;
-    let data;
-    try {
-          await fetch("http://localhost:5000/validateuser", {
-          method: "POST",
-          body: JSON.stringify(body),
-          headers: { "Content-Type": "application/json" },
-        })
-        .then( response => response.json())
-        .then(info => data= info.message)
-      } 
-      catch (error) {
-        console.log(error);
-      }
-if(data === "user exist") {
-    this.props.history.push("/home")
-}
-else {
-    console.log("dataa", (data))
-    alert((data))
+        const body = this.state;
+        let data;
+        try {
+            await fetch("http://localhost:5000/validateuser", {
+            method: "POST",
+            body: JSON.stringify(body),
+            headers: { "Content-Type": "application/json" },
+            })
+            .then( response => response.json())
+            .then(info => data= info.message)
+        } 
 
-}
+        catch (error) {
+        console.log(error);
+        }
+
+        if(data === "user exist") {
+        this.props.history.push("/home")
+        }
+        
+        else {
+        console.log("dataa", (data))
+        alert((data))
+        }
     };
+    
     render() {
         return (
             
