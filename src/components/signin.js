@@ -9,7 +9,7 @@ export default class signin extends Component {
      handleSubmit = async (e) => {
         e.preventDefault();
          const body = this.state;
-let data;
+    let data;
     try {
           await fetch("http://localhost:5000/validateuser", {
           method: "POST",
