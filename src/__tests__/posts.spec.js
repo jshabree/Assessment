@@ -8,7 +8,24 @@ describe('<Posts />', () => {
     beforeAll(() => {
 
     // prepare nock to respond to a request to posts API
-        nock("https://jsonplaceholder.typicode.com/posts")
-            .get('?_limit=5')
+    nock("https://posts.example.com/api")
+        .get('/data')
+        .reply(200, {
+            data: [],
+            summary : 'cat API'
+        });
+        
     });
+
+    it('component fetching posts from API', async(done) => {
+        const root = shallow(<Posts />);
+
+        let componentsPost = {};
+        await waitUntil(() => root.state('Posts').data !== null);
+
+        expect(componentsPost.data).toEqual('cat API');
+
+        done();
+    })
 });
+  
