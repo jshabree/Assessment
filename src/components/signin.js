@@ -15,9 +15,11 @@ export default class signin extends Component {
           method: "POST",
           body: JSON.stringify(body),
           headers: { "Content-Type": "application/json" },
-        }).then( response => response.json())
+        })
+        .then( response => response.json())
         .then(info => data= info.message)
-      } catch (error) {
+      } 
+      catch (error) {
         console.log(error);
       }
 if(data === "user exist") {
