@@ -6,7 +6,9 @@
         "sidedebar",
         "signin",
         "signup",
-        "walsheim"
+        "walsheim",
+        "yourpassword",
+        "yourusername"
     ],
     "git.ignoreLimitWarning": true
 }
