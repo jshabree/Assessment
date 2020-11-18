@@ -11,8 +11,10 @@ export default class posts extends Component {
         fetch("https://jsonplaceholder.typicode.com/posts", {
             method: "GET",
             headers: { "Content-Type": "application/json" },
-          }).then( response => response.json())
-          .then(info => this.setState({data: info}))
+          })
+          .then( response => response.json())
+          .then(info => 
+            this.setState({data: info}))
     }
 
 
@@ -21,8 +23,10 @@ export default class posts extends Component {
         fetch("https://jsonplaceholder.typicode.com/posts?_limit=5", {
             method: "GET",
             headers: { "Content-Type": "application/json" },
-          }).then( response => response.json())
-          .then(info => this.setState({data: info}))
+          })
+          .then( response => response.json())
+          .then(info =>
+             this.setState({data: info}))
     }
 
 
